@@ -1,15 +1,18 @@
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import AuthContextProvider from "./contexts/AuthContext";
 import MainRoutes from "./MainRoutes";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        {/* <AuthContextProvider> */}
-        <MainRoutes />
-        {/* </AuthContextProvider> */}
+        <AuthContextProvider>
+          <Navbar />
+          <MainRoutes />
+          <Footer />
+        </AuthContextProvider>
       </BrowserRouter>
     </>
   );

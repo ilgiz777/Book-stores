@@ -16,6 +16,7 @@ import { GiBookAura } from "@react-icons/all-files/gi/GiBookAura";
 
 import "./Navbar.module.css";
 import AdminPage from "../../pages/AdminPage";
+import { useAuth } from "../../contexts/AuthContext";
 
 const pages = [
   { name: "HOME", link: "/", id: 1 },
@@ -24,9 +25,14 @@ const pages = [
   { name: "CONTACTS", link: "/contacts", id: 4 },
 ];
 
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
+  const {
+    handleLogout,
+    user: { email },
+  } = useAuth();
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -60,7 +66,6 @@ const Navbar = () => {
               <GiBookAura sx={{ color: "#000" }} />{" "}
             </h2>
           </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -99,7 +104,7 @@ const Navbar = () => {
               ))}
               <MenuItem>
                 <Link to="/admin">
-                  <Typography textAlign="center">ADMIN PANNEL</Typography>
+                  <Typography textAlign="center">ADMIN PANEL</Typography>
                 </Link>
               </MenuItem>
             </Menu>
@@ -142,11 +147,31 @@ const Navbar = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
-              </IconButton>
-            </Tooltip>
+            {email ? (
+              <Button
+                id="button"
+                variant="outlined"
+                color="error"
+                sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+                onClick={handleLogout}
+              >
+                Logout
+              </Button>
+            ) : null}
+
+            {email ? null : (
+              <Link to="/auth">
+                <Button
+                  id="button"
+                  variant="outlined"
+                  color="error"
+                  sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+                  onClick={handleLogout}
+                >
+                  Login
+                </Button>
+              </Link>
+            )}
           </Box>
         </Toolbar>
       </Container>
