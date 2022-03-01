@@ -6,8 +6,8 @@ import MediaCard from "./ProdutsCart";
 // import SideBar from "../SideBar/SideBar";
 // import "./styles/ProductList.css";
 
-const ProductList = () => {
-  const { getProducts, products } = useProducts();
+const ProductList = ({ products }) => {
+  const { getProducts } = useProducts();
   console.log(products);
   useEffect(() => {
     getProducts();
