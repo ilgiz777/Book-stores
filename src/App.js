@@ -3,15 +3,18 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import AuthContextProvider from "./contexts/AuthContext";
 import MainRoutes from "./MainRoutes";
+import ProductContextProvider from "./contexts/ProductContext";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <AuthContextProvider>
-          <Navbar />
-          <MainRoutes />
-          <Footer />
+          <ProductContextProvider>
+            <Navbar />
+            <MainRoutes />
+            <Footer />
+          </ProductContextProvider>
         </AuthContextProvider>
       </BrowserRouter>
     </>
