@@ -10,6 +10,8 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
+import { ADMIN } from "../../helpers/consts";
+
 import MenuItem from "@mui/material/MenuItem";
 import { Link } from "react-router-dom";
 import { GiBookAura } from "@react-icons/all-files/gi/GiBookAura";
@@ -102,11 +104,13 @@ const Navbar = () => {
                   </Link>
                 </MenuItem>
               ))}
-              <MenuItem>
-                <Link to="/admin">
-                  <Typography textAlign="center">ADMIN PANEL</Typography>
-                </Link>
-              </MenuItem>
+              {email == ADMIN ? (
+                <MenuItem>
+                  <Link to="/admin">
+                    <Typography textAlign="center">ADMIN PANNEL</Typography>
+                  </Link>
+                </MenuItem>
+              ) : null}
             </Menu>
           </Box>
           <Typography
@@ -131,19 +135,21 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
-            <Link to="/admin" sx={{ color: "#fff" }}>
-              <Button
-                sx={{
-                  my: 2,
-                  color: "fff",
-                  display: "block",
-                  fontSize: 15,
-                  fontFamily: "Monospace",
-                }}
-              >
-                ADMIN PANNEL
-              </Button>
-            </Link>
+            {email == ADMIN ? (
+              <Link to="/admin">
+                <Button
+                  sx={{
+                    my: 2,
+                    color: "#ff9100",
+                    display: "block",
+                    fontSize: 15,
+                    fontFamily: "Monospace",
+                  }}
+                >
+                  ADMIN PANEL
+                </Button>
+              </Link>
+            ) : null}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

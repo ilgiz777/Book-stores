@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../../contexts/ProductContext";
 
-// import "./styles/AddProduct.css"
+// import "./styles/AddProduct.css";
 
 const AddProduct = () => {
-  //   const { addProduct } = useProducts();
+  const { addProduct } = useProducts();
 
   const navigate = useNavigate();
 
@@ -107,11 +107,11 @@ const AddProduct = () => {
               color="error"
               size="large"
               fullWidth
-              //   onClick={() => {
-              //     addProduct(product);
+              onClick={() => {
+                addProduct(product);
 
-              //     navigate("/products");
-              //   }}
+                navigate("/products");
+              }}
             >
               CREATE PRODUCT
             </Button>
