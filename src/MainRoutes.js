@@ -55,7 +55,7 @@ const MainRoutes = () => {
       id: 1,
     },
     {
-      link: "/",
+      link: "/edit/:id",
       element: <EditProductPage />,
       id: 2,
     },

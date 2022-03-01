@@ -14,8 +14,8 @@ import { ADMIN } from "../../helpers/consts";
 import { IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-export default function MediaCard({ item }) {
-  const { addProductToCart, checkProductInCart } = useProducts();
+export default function ProductCard({ item }) {
+  const { addProductToCart, checkProductInCart, deleteProduct } = useProducts();
   const navigate = useNavigate();
 
   const {
@@ -46,7 +46,9 @@ export default function MediaCard({ item }) {
           {email === ADMIN ? (
             <>
               {" "}
-              <Button size="small">DELETE</Button>
+              <Button size="small" onClick={() => deleteProduct(item.id)}>
+                DELETE
+              </Button>
               <Button size="small" onClick={() => navigate(`/edit/${item.id}`)}>
                 EDIT
               </Button>

@@ -11,6 +11,7 @@ export const useProducts = () => {
 
 const INIT_STATE = {
   products: [],
+  productDetails: {},
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -29,8 +30,8 @@ const reducer = (state = INIT_STATE, action) => {
 const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
-  const location = useLocation();
-  const navigate = useNavigate();
+  // const location = useLocation();
+  // const navigate = useNavigate();
 
   // ! ===================== crud start======================
   const getProducts = async () => {
@@ -70,7 +71,11 @@ const ProductContextProvider = ({ children }) => {
   const values = {
     getProducts,
     addProduct,
+    deleteProduct,
+    getProductDetails,
+    saveEditedProduct,
     products: state.products,
+    productDetails: state.productDetails,
   };
   return (
     <productContext.Provider value={values}>{children}</productContext.Provider>
