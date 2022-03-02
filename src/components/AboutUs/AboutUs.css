@@ -1,0 +1,87 @@
+.header-content {
+  background-color: rgb(186, 216, 215);
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.events_col {
+  display: flex;
+}
+
+.aboutus-col1 {
+  background-image: url("https://st.focusedcollection.com/9264440/i/650/focused_236486090-stock-photo-sunrise-maria-theresien-platz-vienna.jpg");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.aboutus-col1:hover {
+  transform: scale(1.1);
+}
+.aboutus-col2 {
+  background-image: url("https://tinybeans.com/wp-content/uploads/2020/10/flashlight-reading-story-iStock-1147977485.jpg?w=640");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.aboutus-col2:hover {
+  transform: scale(1.1);
+}
+
+.aboutus-col3 {
+  background-image: url("https://bilingualkidspot.com/wp-content/uploads/2020/06/Best-Book-Sets-for-Children-816x524.png");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.aboutus-col3:hover {
+  transform: scale(1.1);
+}
+.aboutus-col4 {
+  background-image: url("https://s1.1zoom.me/big0/857/Scenery_Mountains_Lake_Moon_Night_Reflection_518851_1280x800.jpg");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.aboutus-col4:hover {
+  transform: scale(1.1);
+}
+
+/* .btn_aboutus {
+  background: #000;
+  border: 2px solid #4caf50;
+  color: red;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: auto;
+} */
+
+.btn_aboutus {
+  /* font-size: 20px; */
+  /* color: rgb(128, 12, 12); */
+  background: #193a47;
+  opacity: 0.3;
+  font-weight: 600;
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.2em;
+  border: 2px solid #193a47;
+}
