@@ -60,6 +60,7 @@ export default function ProductCard({ item }) {
               />
             </IconButton>
           )}
+
           <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
         </CardActions>
       </Card>

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import ReactPaginate from "react-paginate";
 import { useLocation } from "react-router-dom";
-import ProductList from "../components/Product/ProductList";
+import ProductList from "../components/Product/ProductList/ProductList";
 import { useProducts } from "../contexts/ProductContext";
-
+import { FaArrowAltCircleLeft } from "@react-icons/all-files/fa/FaArrowAltCircleLeft";
+import { FaArrowAltCircleRight } from "@react-icons/all-files/fa/FaArrowAltCircleRight";
 import "./pages.css";
 
 const ProductsPage = () => {
@@ -33,8 +34,8 @@ const ProductsPage = () => {
     <div>
       <ProductList products={paginateProducts} />
       <ReactPaginate
-        previousLabel="< previous"
-        nextLabel="next >"
+        previousLabel={<FaArrowAltCircleLeft />}
+        nextLabel={<FaArrowAltCircleRight />}
         onPageChange={changePage}
         pageRangeDisplayed={5}
         pageCount={pageCount}

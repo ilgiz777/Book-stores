@@ -55,6 +55,7 @@ const Navbar = () => {
 
   return (
     <AppBar position="static" sx={{ bgcolor: "#000" }}>
+
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -76,97 +77,114 @@ const Navbar = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
+
             >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
+              <h2 sx={{}}>
+                {" "}
+                <GiBookAura sx={{ margin: "100px" }} />
+                Readit
+              </h2>
+            </Typography>
+            <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+              <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+                onClick={handleOpenNavMenu}
+                color="inherit"
+              >
+                <MenuIcon />
+              </IconButton>
+              <h2>Readit</h2>
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {pages.map((page) => (
+                  <center>
+                    <MenuItem key={page} onClick={handleCloseNavMenu}>
+                      <Link to={page.link}>
+                        <Typography textAlign="center">{page.name}</Typography>
+                      </Link>
+                    </MenuItem>
+                  </center>
+                ))}
+                {email == ADMIN ? (
+                  <MenuItem>
+                    <Link to="/admin">
+                      <Typography textAlign="center">ADMIN PANNEL</Typography>
+                    </Link>
+                  </MenuItem>
+                ) : null}
+              </Menu>
+            </Box>
+            <Typography
+              variant="h6"
+              noWrap
+              component="div"
+              sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
+            >
+              <h2>
+                <GiBookAura />
+              </h2>
+            </Typography>
+            <Box
               sx={{
-                display: { xs: "block", md: "none" },
+                flexGrow: 1,
+                display: { xs: "none", md: "flex" },
+                mx: "auto",
+                width: 200,
+                p: 1,
+                m: 1,
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <center>
                   <Link to={page.link}>
-                    <Typography textAlign="center">{page.name}</Typography>
+                    <Button
+                      key={page.id}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, color: "white", display: "block" }}
+                    >
+                      {page.name}
+                    </Button>
                   </Link>
-                </MenuItem>
+                </center>
               ))}
               {email == ADMIN ? (
-                <MenuItem>
-                  <Link to="/admin">
-                    <Typography textAlign="center">ADMIN PANNEL</Typography>
-                  </Link>
-                </MenuItem>
+                <Link to="/admin">
+                  <Button
+                    sx={{
+                      my: 2,
+                      color: "#ff9100",
+                      display: "block",
+                      fontSize: 15,
+                      fontFamily: "Monospace",
+                    }}
+                  >
+                    ADMIN PANEL
+                  </Button>
+                </Link>
               ) : null}
-            </Menu>
-          </Box>
-          <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}
-          >
-            <h2>
-              <GiBookAura />
-            </h2>
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Link to={page.link}>
-                <Button
-                  key={page.id}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                >
-                  {page.name}
-                </Button>
-              </Link>
-            ))}
-            {email == ADMIN ? (
-              <Link to="/admin">
-                <Button
-                  sx={{
-                    my: 2,
-                    color: "#ff9100",
-                    display: "block",
-                    fontSize: 15,
-                    fontFamily: "Monospace",
-                  }}
-                >
-                  ADMIN PANEL
-                </Button>
-              </Link>
-            ) : null}
-          </Box>
+            </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
-            {email ? (
-              <Button
-                id="button"
-                variant="outlined"
-                color="error"
-                sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
-                onClick={handleLogout}
-              >
-                Logout
-              </Button>
-            ) : null}
-
-            {email ? null : (
-              <Link to="/auth">
+            <Box sx={{ flexGrow: 0 }}>
+              {email ? (
                 <Button
                   id="button"
                   variant="outlined"
@@ -174,12 +192,26 @@ const Navbar = () => {
                   sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
                   onClick={handleLogout}
                 >
-                  Login
+                  Logout
                 </Button>
-              </Link>
-            )}
-          </Box>
-        </Toolbar>
+              ) : null}
+
+              {email ? null : (
+                <Link to="/auth">
+                  <Button
+                    id="button"
+                    variant="outlined"
+                    color="error"
+                    sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
+                    onClick={handleLogout}
+                  >
+                    Login
+                  </Button>
+                </Link>
+              )}
+            </Box>
+          </Toolbar>
+        </Container>
       </Container>
     </AppBar>
   );

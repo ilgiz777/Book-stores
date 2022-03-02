@@ -8,6 +8,7 @@ import PayCard from "./components/PayCard/PayCard";
 import AboutUs from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
+import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
@@ -53,6 +54,7 @@ const MainRoutes = () => {
       id: 7,
     },
     {
+
       link: "/history",
       element: <History />,
       id: 8,
@@ -76,6 +78,11 @@ const MainRoutes = () => {
       link: "/paycard",
       element: <PayCard />,
       id: 12,
+    },
+
+      link: "/cart",
+      element: <CartPage />,
+      id: 13,
     },
   ];
   const PRIVATE_ROUTES = [

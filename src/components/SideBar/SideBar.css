@@ -1,0 +1,6 @@
+.container_sidebar {
+  display: flex;
+  width: 80vh;
+  justify-content: space-between;
+  background-color: #360910;
+}

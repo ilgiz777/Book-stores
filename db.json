@@ -1,19 +1,11 @@
 {
   "products": [
     {
-      "name": "Hiking $ Trecking",
-      "description": "Ala-Archa National Park ",
-      "price": "200",
-      "picture": "http://feelnomad.com/wp-content/uploads/2019/10/Ala-archa-park-2-675x450.jpg",
-      "type": "nature",
-      "id": 17
-    },
-    {
       "name": "Cycling",
       "description": "Road around Issyk-Kul lake,  Bishkek-Osh highways.",
       "price": null,
       "picture": "https://www.lakedistrict.gov.uk/__data/assets/image/0026/109394/hd_mountain_biking_whinlatt.jpg",
-      "type": "adventure",
+      "type": "bestsellers",
       "id": 19
     },
     {
@@ -21,7 +13,7 @@
       "description": "The roud around Too Ashu, Kazarman and etc.",
       "price": "500",
       "picture": "https://triptokyrgyzstan.com/sites/default/files/images/2019-03/12783621_1664200787177583_776377640883211159_o.jpg",
-      "type": "adventure",
+      "type": "bestsellers",
       "id": 21
     },
     {
@@ -29,7 +21,7 @@
       "description": "Trails go  landscapes of Tien Shan and Pamir.",
       "price": null,
       "picture": "https://strannik.kg/assets/cache_image/upload/img/horse_tour_12_1920x1080_1ac.jpg",
-      "type": "adventure",
+      "type": "bestsellers",
       "id": 23
     },
     {
@@ -37,15 +29,16 @@
       "description": "Going on a jailoo trip of old kyrgyz nomadic culture.",
       "price": null,
       "picture": "https://cdn.odysseytraveller.com/app/uploads/2019/07/A-yurt-in-the-mountains-of-Kyrgyzstan.jpg",
-      "type": "cultural",
-      "id": 24
+      "type": "top sales",
+      "id": 24,
+      "genre": "novel"
     },
     {
       "name": "Koumiss Treatment",
       "description": "Koumiss  treatment is a developing form of health.",
       "price": null,
       "picture": "https://jyrgalan.com/wp-content/uploads/2017/10/Kyrgyz_Kymyz.jpg",
-      "type": "cultural",
+      "type": "topsales",
       "id": 25
     },
     {
@@ -53,7 +46,7 @@
       "description": " Kyrgyz food dominated by meat and dairy products.",
       "price": null,
       "picture": "https://pbs.twimg.com/media/EcK8bSpXkAEm1CV?format=jpg&name=small",
-      "type": "cultural",
+      "type": "topsales",
       "id": 26
     },
     {
@@ -61,7 +54,7 @@
       "description": "The place of real hungting with birds of prey.",
       "price": null,
       "picture": "https://theplanetd.com/images/Eagle-Hunters-Kyrgyzstan-12.jpg",
-      "type": "cultural",
+      "type": "topsales",
       "id": 27
     },
     {
@@ -69,7 +62,7 @@
       "description": "You should definitely try white water rafting.",
       "price": null,
       "picture": "https://triptokyrgyzstan.com/sites/default/files/images/2019-03/river-rafting-at-cangrejal.jpg",
-      "type": "adventure",
+      "type": "bestsellers",
       "id": 28
     },
     {
@@ -77,7 +70,7 @@
       "description": "There are more than ten ski resorts for visitors. ",
       "price": null,
       "picture": "https://i0.wp.com/nomads-yurt.com/wp-content/uploads/2019/11/Skiing_Winter_Men_Snow_Sun_Helmet_Jacket_514545_1280x853.jpg?fit=1280%2C853&ssl=1",
-      "type": "adventure",
+      "type": "bestsellers",
       "id": 29
     },
     {
@@ -85,7 +78,7 @@
       "description": "World Nomads Games is one of the major tourism",
       "price": "from 980 $",
       "picture": "https://st4.depositphotos.com/9597332/21355/i/600/depositphotos_213556884-stock-photo-lake-issyk-kul-kyrgyzstan-5th.jpg",
-      "type": "cultural",
+      "type": "topsales",
       "id": 30
     },
     {
@@ -93,7 +86,7 @@
       "description": "You can follow the routes of the Great Silk Road.",
       "price": null,
       "picture": "https://www.baibol.kg/img/attraction_gallery/152413637249195.jpg",
-      "type": "historical",
+      "type": "novelty",
       "id": 31
     },
     {
@@ -110,6 +103,7 @@
       "price": null,
       "picture": "https://kalpak-travel.com/wp-content/uploads/2017/04/kyrgyzstan-osh-suleiman-mountain.jpg",
       "type": "historical",
+
       "id": 33
     },
     {
@@ -166,9 +160,11 @@
       "price": 13241234,
       "picture": "212e23trfe",
       "type": "sdfvdsbv",
+      "genre": "novel",
       "id": 40
     },
     {
+
       "name": "dc",
       "description": "cd",
       "price": null,
