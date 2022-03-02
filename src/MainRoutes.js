@@ -1,6 +1,11 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import AboutUsPage from "./pages/AboutUsPage";
+import Better from "./components/AboutUs/Better";
+import History from "./components/AboutUs/History";
+import Purpose from "./components/AboutUs/Purpose";
+import Relax from "./components/AboutUs/Relax";
+import PayCard from "./components/PayCard/PayCard";
+import AboutUs from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
 import CartPage from "./pages/CartPage";
@@ -20,7 +25,7 @@ const MainRoutes = () => {
     },
     {
       link: "/aboutus",
-      element: <AboutUsPage />,
+      element: <AboutUs />,
       id: 2,
     },
     {
@@ -49,9 +54,35 @@ const MainRoutes = () => {
       id: 7,
     },
     {
+
+      link: "/history",
+      element: <History />,
+      id: 8,
+    },
+    {
+      link: "/better",
+      element: <Better />,
+      id: 9,
+    },
+    {
+      link: "/purpose",
+      element: <Purpose />,
+      id: 10,
+    },
+    {
+      link: "/relax",
+      element: <Relax />,
+      id: 11,
+    },
+    {
+      link: "/paycard",
+      element: <PayCard />,
+      id: 12,
+    },
+
       link: "/cart",
       element: <CartPage />,
-      id: 8,
+      id: 13,
     },
   ];
   const PRIVATE_ROUTES = [
