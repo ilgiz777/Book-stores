@@ -54,7 +54,6 @@ const MainRoutes = () => {
       id: 7,
     },
     {
-
       link: "/history",
       element: <History />,
       id: 8,
@@ -79,7 +78,7 @@ const MainRoutes = () => {
       element: <PayCard />,
       id: 12,
     },
-
+    {
       link: "/cart",
       element: <CartPage />,
       id: 13,
