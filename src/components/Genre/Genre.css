@@ -1,0 +1,10 @@
+.genre {
+  display: flex;
+  flex-direction: column;
+}
+
+.container_genre {
+  background-color: #8bad6b;
+  border-radius: 10px;
+  border: none;
+}

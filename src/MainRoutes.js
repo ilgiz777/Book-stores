@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import AboutUsPage from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
 import AuthPage from "./pages/AuthPage";
+import CartPage from "./pages/CartPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import EditProductPage from "./pages/EditProductPage";
 import HomePage from "./pages/HomePage";
@@ -46,6 +47,11 @@ const MainRoutes = () => {
       link: "*",
       element: <NotFoundPage />,
       id: 7,
+    },
+    {
+      link: "/cart",
+      element: <CartPage />,
+      id: 8,
     },
   ];
   const PRIVATE_ROUTES = [

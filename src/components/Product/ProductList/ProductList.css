@@ -1,0 +1,10 @@
+.producs_header {
+  background-color: #360910;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  flex-wrap: wrap;
+}
