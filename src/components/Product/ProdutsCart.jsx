@@ -15,8 +15,7 @@ import { IconButton } from "@mui/material";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 export default function ProductCard({ item }) {
-  const { addProductToCart, /*checkProductInCart,*/ deleteProduct } =
-    useProducts();
+  const { addProductToCart, checkProductInCart, deleteProduct } = useProducts();
   const navigate = useNavigate();
 
   const {
@@ -56,11 +55,12 @@ export default function ProductCard({ item }) {
             </>
           ) : (
             <IconButton onClick={() => addProductToCart(item)}>
-              {/* <ShoppingCartIcon
+              <ShoppingCartIcon
                 color={checkProductInCart(item.id) ? "secondary" : ""}
-              /> */}
+              />
             </IconButton>
           )}
+
           <span onClick={() => navigate(`/products/${item.id}`)}>more...</span>
         </CardActions>
       </Card>

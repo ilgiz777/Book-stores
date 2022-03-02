@@ -1,15 +1,19 @@
-import { Grid, TextField } from "@mui/material";
+import { Badge, Button, Grid, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContext";
 import MediaCard from "../ProdutsCart";
 import SideBar from "../../SideBar/SideBar";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 // import "../ProductList/ProductList/.css";
 import "./ProductList.css";
 
 import Genre from "../../Genre/Genre";
 
 const ProductList = ({ products }) => {
+  const { cart } = useProducts();
+
   const { getProducts } = useProducts();
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -56,7 +60,18 @@ const ProductList = ({ products }) => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
+        <Link to="/cart">
+          <Button sx={{ my: 2, color: "white" }}>
+            <Badge
+              badgeContent={cart?.products ? cart.products.length : 0}
+              color="secondary"
+            >
+              <ShoppingCartIcon />
+            </Badge>
+          </Button>
+        </Link>
       </div>
+
       <div style={{ display: "flex", backgroundColor: "" }}>
         <div className="blog-left">
           <Grid container spacing={6}>
