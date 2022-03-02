@@ -16,6 +16,7 @@ const AddProduct = () => {
     price: 0,
     picture: "",
     type: "",
+    genre: "",
   });
 
   const handleInp = (e) => {
@@ -93,6 +94,14 @@ const AddProduct = () => {
             label="TYPE"
             variant="outlined"
             name="type"
+            onChange={handleInp}
+          />
+          <TextField
+            fullWidth
+            id="outlined-basic"
+            label="GENRE"
+            variant="outlined"
+            name="genre"
             onChange={handleInp}
           />
           <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>

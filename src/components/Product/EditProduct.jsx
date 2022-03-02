@@ -17,6 +17,7 @@ const EditProduct = () => {
     price: 0,
     picture: "",
     type: "",
+    genre: "",
   });
 
   const handleInput = (e, product, setProduct) => {
@@ -97,6 +98,15 @@ const EditProduct = () => {
               label="TYPE"
               variant="outlined"
               name="type"
+              onChange={(e) => handleInput(e, product, setProduct)}
+            />
+            <TextField
+              value={product.genre}
+              fullWidth
+              id="outlined-basic"
+              label="GENRE"
+              variant="outlined"
+              name="genre"
               onChange={(e) => handleInput(e, product, setProduct)}
             />
             <Stack direction="row" spacing={2} sx={{ bgcolor: "#880e4f" }}>

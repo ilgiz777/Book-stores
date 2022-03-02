@@ -69,6 +69,7 @@ const ProductContextProvider = ({ children }) => {
   // ! ===================== crud end========================
 
   const fetchByParams = async (query, value) => {
+    console.log(query, value);
     const search = new URLSearchParams(location.search);
     if (value === "all") {
       search.delete(query);
