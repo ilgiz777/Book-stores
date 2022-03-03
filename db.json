@@ -103,7 +103,6 @@
       "price": null,
       "picture": "https://kalpak-travel.com/wp-content/uploads/2017/04/kyrgyzstan-osh-suleiman-mountain.jpg",
       "type": "historical",
-
       "id": 33
     },
     {
@@ -147,14 +146,6 @@
       "id": 38
     },
     {
-      "name": "ad",
-      "description": "aDS",
-      "price": null,
-      "picture": "AD",
-      "type": "AXad",
-      "id": 39
-    },
-    {
       "name": "iskak",
       "description": "asdsada",
       "price": 13241234,
@@ -164,13 +155,22 @@
       "id": 40
     },
     {
-
-      "name": "dc",
-      "description": "cd",
+      "name": "fdd",
+      "description": "dfdf",
       "price": null,
-      "picture": "cd",
-      "type": "cd",
+      "picture": "dfdf",
+      "type": "dff",
+      "genre": "dfd",
       "id": 41
+    },
+    {
+      "name": "eww",
+      "description": "wew",
+      "price": null,
+      "picture": "we",
+      "type": "wew",
+      "genre": "eww",
+      "id": 42
     }
   ]
 }
