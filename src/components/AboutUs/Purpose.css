@@ -1,0 +1,39 @@
+.purpoze-header3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.purpoze-img {
+  background-image: url("https://cdn.lifehack.org/wp-content/uploads/2015/03/how-to-read-faster.jpeg");
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.thema3 {
+  background: #3a4949;
+  opacity: 0.3;
+  font-weight: 1300;
+  color: white;
+  font-size: 4.7em;
+  line-height: 7em;
+  border: 2px solid #990e25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 150px; */
+}
+
+.cardpurpose {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardpurpose2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}

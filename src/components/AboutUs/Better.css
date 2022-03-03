@@ -1,0 +1,90 @@
+.better-header2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.better-img {
+  background-image: url("https://cdn.gobankingrates.com/wp-content/uploads/2015/03/iStock_000061104988_Large.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.thema2 {
+  background: #3a4949;
+  opacity: 0.3;
+  font-weight: 1300;
+  color: white;
+  font-size: 4.7em;
+  line-height: 7em;
+  border: 2px solid #990e25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 150px; */
+}
+.BDN-1 {
+  display: flex;
+}
+
+.BDN {
+  background-image: url("https://www.dbk.de/fileadmin/_processed_/0/e/csm_Bibliotheken_150720-93-000176_web_60caca5bf4.jpg");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.BDN:hover {
+  transform: scale(1.1);
+}
+.VTN {
+  background-image: url("https://cdn.givingcompass.org/wp-content/uploads/2017/10/18163740/Why-Not-Volunteer-Three-Benefits-for-Business.jpg");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.VTN:hover {
+  transform: scale(1.1);
+}
+
+.SPN {
+  background-image: url("https://assets.rebelmouse.io/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8xOTEzNTQ3Ny9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTY4NDUxNDgzN30.ex-rlgcVTkK7w0LMhNKvOxc2lCzen0WPnl-gNBsSWiM/img.jpg?width=980");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.SPN:hover {
+  transform: scale(1.1);
+}
+.LPN {
+  background-image: url("https://www.alwaysonpurpose.com/wp-content/uploads/2019/11/happypeople-1024x679.jpg");
+  width: 110vh;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+.LPN:hover {
+  transform: scale(1.1);
+}
+
+.btn-better {
+  background: #193a47;
+  opacity: 0.5;
+  font-weight: 600;
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.2em;
+  border: 2px solid #193a47;
+}
