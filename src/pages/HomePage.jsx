@@ -4,7 +4,7 @@ import SwipeableTextMobileStepper from "../components/Home/SectionSecond";
 
 const HomePage = () => {
   return (
-    <div>
+    <div style={{ backgroundColor: "#000" }}>
       <SectionFirst />
       <SwipeableTextMobileStepper />
     </div>

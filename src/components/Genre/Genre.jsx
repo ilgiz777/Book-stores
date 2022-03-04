@@ -31,6 +31,7 @@ const Genre = () => {
                 aria-controls={open ? "fade-menu" : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
+                sx={{ color: "#150050" }}
                 onClick={handleClick}
               >
                 Genre
@@ -47,6 +48,7 @@ const Genre = () => {
               >
                 <div className="genre">
                   <Button
+                    sx={{ bgcolor: "#150050" }}
                     value="adventures"
                     onClick={(e) => fetchByParams("genre", e.target.value)}
                   >
@@ -68,7 +70,7 @@ const Genre = () => {
                     value="novel"
                     onClick={(e) => fetchByParams("genre", e.target.value)}
                   >
-                    novel
+                    Novel
                   </Button>
                   <Button
                     value="humor"
