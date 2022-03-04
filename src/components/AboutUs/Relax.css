@@ -1,0 +1,31 @@
+.relax-header4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.relax-img {
+  background-image: url("https://dlsdc.com/wp-content/uploads/2019/08/636102552045301337-585377211_How-to-de-stress-through-meditation.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.thema4 {
+  background: #3a4949;
+  opacity: 0.3;
+  font-weight: 1300;
+  color: white;
+  font-size: 4.7em;
+  line-height: 7em;
+  border: 2px solid #990e25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 150px; */
+}
+
+video {
+  width: 100vw;
+}

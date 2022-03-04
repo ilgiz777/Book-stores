@@ -1,11 +1,47 @@
 .header-content {
-  background-color: rgb(186, 216, 215);
+  background-color: rgb(61, 179, 233);
   width: 100vw;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  clear: both;
+
+  -webkit-font-smoothing: antialiased;
+}
+.events {
+  line-height: 6.8;
+  opacity: inherit;
+}
+h1 {
+  font-size: x-large;
+  font-family: mallory, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.4;
+  font-size: 6em;
+  opacity: 0.6;
+  text-rendering: optimizeLegibility;
+  transition: transform 0.3s ease;
+}
+
+h3 {
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
+    Arial, Helvetica, sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  font-size: 2em;
+  opacity: 0, 4;
+}
+
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  font-size: 1.5em;
 }
 
 .events_col {
@@ -62,17 +98,7 @@
   transform: scale(1.1);
 }
 
-/* .btn_aboutus {
-  background: #000;
-  border: 2px solid #4caf50;
-  color: red;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  outline: auto;
-} */
+
 
 .btn_aboutus {
   /* font-size: 20px; */

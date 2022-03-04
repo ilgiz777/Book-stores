@@ -1,0 +1,89 @@
+.history-header1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.history-img {
+  background-image: url("https://www.tripzaza.com/ru/destinations/wp-content/uploads/2018/06/7-Petra-e1528946301405.jpg");
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+}
+
+.thema {
+  background: #3a4949;
+  opacity: 0.4;
+  font-weight: 1600;
+  color: white;
+  font-size: 7em;
+  line-height: 6em;
+  border: 2px solid #990e25;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 150px; */
+}
+
+.text1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.text1 p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #134d4d;
+  margin: 100px 0 25px auto;
+}
+
+.histor {
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.hs4 {
+  color: rgb(5, 132, 155);
+  display: flex;
+  justify-content: center;
+}
+.paragr {
+  color: black;
+  font-style: italic;
+}
+
+.pictur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .text1 img {
+  width: 250%;
+  height: 50%;
+  margin: 0 30px 0;
+}
+
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row2 img {
+  height: 280px;
+  border: 2px solid rgb(238, 202, 126);
+  background: 100% 100% no-repeat;
+  background-size: cover;
+}
+
+.row2 .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -1vw;
+  width: 505px;
+} */
