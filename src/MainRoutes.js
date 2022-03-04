@@ -4,6 +4,7 @@ import Better from "./components/AboutUs/Better";
 import History from "./components/AboutUs/History";
 import Purpose from "./components/AboutUs/Purpose";
 import Relax from "./components/AboutUs/Relax";
+import Contacts from "./components/Contacts/Contacts";
 import PayCard from "./components/PayCard/PayCard";
 import AboutUs from "./pages/AboutUsPage";
 import AdminPage from "./pages/AdminPage";
@@ -35,7 +36,7 @@ const MainRoutes = () => {
     },
     {
       link: "/contacts",
-      element: <ContactUsPage />,
+      element: <Contacts />,
       id: 4,
     },
     {
