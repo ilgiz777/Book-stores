@@ -78,6 +78,12 @@ const Genre = () => {
                   >
                     Humor
                   </Button>
+                  <Button
+                    value="all"
+                    onClick={(e) => fetchByParams("genre", e.target.value)}
+                  >
+                    all
+                  </Button>
                 </div>
               </Menu>
             </div>

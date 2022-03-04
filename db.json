@@ -1,5 +1,94 @@
 {
-  "products": []
-
-  
+  "products": [
+    {
+      "name": " Master and Margarita",
+      "description": "The Master and Margarita  is a novel by Mikhail Afanasyevich Bulgakov , work on which began in December 1928 and continued until the writer's death. The novel refers to unfinished works; editing and bringing together draft notes was carried out after the death of her husband by the writer's widow - Elena Sergeevna . The first version of the novel, which had the names \"Engineer's Hoof\", \"Black Magician\" and others, was destroyed by Bulgakov in 1930. In subsequent editions, the author of the novel about Pontius Pilate and his beloved appeared among the heroes of the work. The final name - \"The Master and Margarita\" - took shape in 1937.",
+      "price": "234",
+      "picture": "https://www.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-l2zuZ15VR3xP.jpg",
+      "type": "bestsellers",
+      "genre": "novel",
+      "id": 1
+    },
+    {
+      "name": "монах который продал свой феррари",
+      "description": "What is true success and how to achieve it? Is it possible to find happiness that does not depend on either career growth or global crises? How to get rid of the endless worry about tomorrow and start enjoying every day you live? Are there simple recipes that allow you to receive spiritual gifts without giving up your usual comforts? How to develop superpowers and subjugate fate? And perhaps most importantly: how to find your calling and become yourself? The answer is in this book, which has become a bestseller in many countries of the world. Together with former millionaire Julian Mantle, Robin Sharma invites the reader to take an amazing journey to Sivana - the land where dreams come true! Подробнее: https://www.labirint.ru/books/684596/",
+      "price": "99",
+      "picture": "https://srv4.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-gxaGXTokyV1.jpg",
+      "type": "bestsellers",
+      "genre": "fiction",
+      "id": 2
+    },
+    {
+      "name": "Shantaram",
+      "description": "467",
+      "price": 0,
+      "picture": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-1BXEk9no75149U.jpg",
+      "type": "topsales",
+      "genre": "adventures",
+      "id": 3
+    },
+    {
+      "name": "Flowers for Algernon",
+      "description": "Forty years ago this was considered science fiction. Forty years ago, this read like science fiction. Exploring and expanding the boundaries of the genre, greedily absorbing all sorts of the latest trends, trying on a universal face, bravely ignoring the Cain stamp of the \"genre ghetto\". Now it is perceived as one of the most humane works of modern times, as a novel of piercing psychological power, as a filigree development of the theme of love and responsibility. It is not for nothing that Keyes called the book of memoirs published already in the 1990s \"Algernon, Charlie and Me.\" In our library you can read the book \"Flowers for Algernon\" for free. To read Flowers for Algernon online» go to the given link. Happy reading to you.",
+      "price": 344,
+      "picture": "https://www.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-Dnic225DCCu.jpg",
+      "type": "adventure",
+      "genre": "fiction",
+      "id": 4
+    },
+    {
+      "name": "Harry Potter and the Philosopher's Stone",
+      "description": "The paper is too thin. Not only the lines on the reverse side are translucent, but also from the previous page (see photo). The books are glued, not stitched (the top and bottom of the spine are decorative fake threads), although right now they do it everywhere. Sheet blocks..",
+      "price": 100,
+      "picture": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-QmmFtEMtbbxqS.jpg",
+      "type": "popular",
+      "genre": "fiction",
+      "id": 5
+    },
+    {
+      "name": "Harry Potter",
+      "description": "Update. I read two books - the translation is excellent, I like it very much! You still can’t tear yourself away from books) and if all sorts of strange words are found here and there in the philosopher’s stone, then in the second book I saw only a couple of them. Style has become much more neutral!",
+      "price": 2200,
+      "picture": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-vVPMDz4LCz.jpg",
+      "type": "popular",
+      "genre": "fiction",
+      "id": 6
+    },
+    {
+      "name": "Harry Potter and the Half-Blood Prince",
+      "description": "Forty years ago this was considered science fiction. Forty years ago, this read like science fiction. Exploring and expanding the boundaries of the genre, greedily absorbing all sorts of the latest trends, trying on a universal face, bravely ignoring the Cain stamp of the \"genre ghetto\". Now it is perceived as one of the most humane works of modern times, as a novel of piercing psychological power, as a filigree development of the theme of love and responsibility. It is not for nothing that Keyes called the book of memoirs published already in the 1990s \"Algernon, Charlie and Me.\" In our library you can read the book \"Flowers for Algernon\" for free. To read Flowers for Algernon online» go to the given link. Happy reading to you.",
+      "price": 344,
+      "picture": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-S2uwbXWqoQd2.jpg",
+      "type": "popular",
+      "genre": "fiction",
+      "id": 7
+    },
+    {
+      "name": "The Little Prince",
+      "description": "\"The Little Prince\" ( fr.  Le Petit Prince ) is an allegorical fairy tale story, the most famous work of Antoine de Saint-Exupery .  The tale tells of the Little Prince who visits various planets in space, including Earth. The book addresses themes of loneliness, friendship, love and loss. Despite the style of a children's book, its hero talks about life and human nature [2] .  First published April 6, 1943 in New York . It has sold over 140 million copies worldwide, making it one of the best-selling books.  The drawings in the book are made by the author himself and are no less famous than the book itself. These are not only illustrations, but also an organic part of the work: the heroes of the tale themselves refer to the drawings and argue about them. The unique illustrations in The Little Prince break down language barriers and become part of a universal visual lexicon understandable to everyone.  “After all, all adults were children at first, only few of them remember this,” Antoine de Saint-Exupery, from a dedication to the book.",
+      "price": 299,
+      "picture": "https://srv4.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-8NAf94dLglB2aaDW.jpg",
+      "type": "adventure",
+      "genre": "adventures",
+      "id": 8
+    },
+    {
+      "name": "Erich Maria Remarque",
+      "description": "This is the most beautiful of the European novels of the 20th century. A novel about love, war and death. This is the saddest of the European novels of the 20th century. A novel about a woman who has nothing but miserable momentary victories - and about a man who is used to fear, hatred and hopelessness as his second self. This is the Arc de Triomphe. A novel about passion that can and should end only in tragedy. In our library you can read the book \"Arc de Triomphe\" for free. To read the book \" Arc de Triomphe \" online, follow the link below. Happy reading to you.",
+      "price": 199,
+      "picture": "https://srv2.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-2Kl7MauMy7o.jpg",
+      "type": "topsales",
+      "genre": "adventures",
+      "id": 9
+    },
+    {
+      "name": "DEAD SOULS",
+      "description": "Whoever you are, my reader, no matter where you stand, no matter what rank you are, whether you are honored with the highest rank or a person of a simple class, but if God enlightened you with literacy and my book has already fallen into your hands, I ask you help me.",
+      "price": 344,
+      "picture": "https://srv4.imgonline.com.ua/result_img/imgonline-com-ua-Black-White-mD3kUEjUlqDrsgbP.jpg",
+      "type": "adventure",
+      "genre": "novel",
+      "id": 10
+    }
+  ]
 }

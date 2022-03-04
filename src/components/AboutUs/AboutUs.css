@@ -98,8 +98,6 @@ p {
   transform: scale(1.1);
 }
 
-
-
 .btn_aboutus {
   /* font-size: 20px; */
   /* color: rgb(128, 12, 12); */
@@ -110,4 +108,18 @@ p {
   font-size: 4em;
   line-height: 1.2em;
   border: 2px solid #193a47;
+}
+
+@media screen and (max-width: 679px) {
+  .events {
+  }
+  .aboutus-col3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .aboutus-col2 {
+    display: none;
+  }
 }
