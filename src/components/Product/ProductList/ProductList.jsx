@@ -61,6 +61,7 @@ const ProductList = ({ products }) => {
           color="warning"
           className="text-field"
           label="Search"
+          focused
           variant="standard"
           sx={{ margin: "2vw", width: "10vw", bgcolor: "warning" }}
           value={search}
@@ -77,7 +78,17 @@ const ProductList = ({ products }) => {
         )}
       </div>
       <div style={{ display: "flex", backgroundColor: "#150050" }}>
-        <div style={{ display: "flex", backgroundColor: "" }}>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            width: "1000px",
+            justifyContent: "space-between",
+            marginLeft: "auto",
+            marginRight: "auto",
+            backgroundColor: "",
+          }}
+        >
           <div className="blog-left">
             <Grid container spacing={6}>
               {products ? (

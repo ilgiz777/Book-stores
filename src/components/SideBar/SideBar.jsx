@@ -40,6 +40,13 @@ const SideBar = () => {
             >
               popular
             </Button>
+            <Button
+              sx={{ color: "#150050" }}
+              value=""
+              onClick={(e) => fetchByParams("type", e.target.value)}
+            >
+              all
+            </Button>
           </div>
         </FormControl>
       </Paper>

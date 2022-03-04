@@ -156,7 +156,7 @@ const Navbar = () => {
                   <Button
                     sx={{
                       my: 2,
-                      color: "#ff9100",
+                      color: "#fff",
                       display: "block",
                       fontSize: 15,
                       fontFamily: "Monospace",
@@ -186,7 +186,7 @@ const Navbar = () => {
                   <Button
                     id="button"
                     variant="outlined"
-                    color="error"
+                    // color="dark"
                     sx={{ my: 2, display: "block", fontFamily: "Monospace" }}
                     onClick={handleLogout}
                   >

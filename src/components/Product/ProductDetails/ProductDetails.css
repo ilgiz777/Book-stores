@@ -3,7 +3,7 @@
   padding: 20px 0 20px 0;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #8bad6b;
+  background-color: #041c32;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -15,7 +15,7 @@
   animation-duration: 2s;
 }
 .details-list {
-  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(0, 0, 0, 0.4); */
   min-width: 40vw;
   min-height: 60vh;
   border-radius: 2%;
