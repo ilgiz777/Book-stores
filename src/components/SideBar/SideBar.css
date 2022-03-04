@@ -1,6 +1,9 @@
 .container_sidebar {
   display: flex;
-  width: 80vh;
+  width: 100%;
   justify-content: space-between;
-  background-color: #360910;
+  flex-wrap: wrap;
+  background-color: #f0a500;
+  border-radius: 5px;
+  border-radius: none;
 }

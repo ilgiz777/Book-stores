@@ -1,0 +1,23 @@
+.cardProduct {
+  width: 400px;
+  height: 480px;
+  background-color: #3f0071;
+  border: 10px solid #e89417;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  .div_cart {
+    width: 250px;
+    /* height: 370px; */
+  }
+  .cart_img {
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cardProduct {
+    height: 200px;
+  }
+}

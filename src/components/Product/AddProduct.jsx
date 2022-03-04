@@ -38,10 +38,18 @@ const AddProduct = () => {
   };
 
   return (
-    <Box sx={{ bgcolor: "#ffe0b2", height: "100vh", padding: "20vh auto" }}>
+    <Box
+      sx={{
+        bgcolor: "#2d203a",
+        height: "100vh",
+        padding: "20vh auto",
+        paddingTop: "20px",
+      }}
+    >
       <center variant="h6" gutterBottom>
-        <h2 sx={{ fontFamily: "Monospace" }}>WELCOME, ADMIN!</h2>
-        <h3>Let's add a new tour!</h3>
+        <h2 style={{ fontFamily: "Monospace", color: "#fff" }} sx={{}}>
+          WELCOME, ADMIN!
+        </h2>
       </center>
 
       <Grid
@@ -52,7 +60,7 @@ const AddProduct = () => {
           margin: "10vh auto",
           boxShadow: 3,
           borderRadius: 3,
-          bgcolor: "#ffcc80",
+          bgcolor: "#fecb30",
         }}
       >
         <form>

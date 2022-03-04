@@ -14,24 +14,34 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: "San Francisco – Oakland Bay Bridge, United States",
+    // label: "San Francisco – Oakland Bay Bridge, United States",
     imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://c8.alamy.com/comp/T0K76X/geography-travel-belgium-ghent-buildings-old-palace-of-justice-built-1836-1846-exterior-view-illustration-from-denkmaeler-der-kunst-monuments-of-art-by-wilhelm-luebke-and-carl-von-luetzow-3rd-edition-stuttgart-1879-volume-2-steel-engraving-chapter-on-architecture-plate-lxiii-denkmaler-denkmler-lubke-lbke-lutzow-ltzow-europe-justice-palace-palaces-neo-classicism-neo-classical-neoclassical-classical-classic-classicism-19th-century-flanders-historic-historical-belgian-additional-rights-clearance-info-not-available-T0K76X.jpg",
   },
   {
-    label: "Bird",
+    // label: "Bird",
     imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://w0.peakpx.com/wallpaper/343/655/HD-wallpaper-library-girl-brunette-girl-books-library-black-white.jpg",
   },
   {
-    label: "Bali, Indonesia",
+    // label: "Bali, Indonesia",
     imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
+      "https://www.photo-visible.com/images-photo/2011/9/800/800_662.jpg",
   },
   {
-    label: "Goč, Serbia",
     imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://cutewallpaper.org/24/black-and-white-library-wallpaper/2435011836.jpg",
+  },
+  {
+    imgPath: "https://data.whicdn.com/images/338152838/original.jpg",
+  },
+  {
+    imgPath:
+      "https://www.clickprophotographers.com/dailyproject/wp-content/uploads/2017/08/silhouette-girl-reading-library-window-black-white-by-KelleyKPhotography-Smyrna.jpg ",
+  },
+  {
+    imgPath:
+      "https://www.refugeecouncil.org.au/wp-content/uploads/2018/02/University_library-750x500.jpg",
   },
 ];
 

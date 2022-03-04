@@ -2,7 +2,7 @@ import { Badge, Button, Grid, TextField } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import { useProducts } from "../../../contexts/ProductContext";
-import MediaCard from "../ProdutsCart";
+import MediaCard from "../ProdutsCart/ProdutsCart";
 import SideBar from "../../SideBar/SideBar";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
@@ -10,9 +10,15 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./ProductList.css";
 
 import Genre from "../../Genre/Genre";
+import { ADMIN } from "../../../helpers/consts";
+import { useAuth } from "../../../contexts/AuthContext";
 
 const ProductList = ({ products }) => {
   const { cart } = useProducts();
+
+  const {
+    user: { email },
+  } = useAuth();
 
   const { getProducts } = useProducts();
 
@@ -52,42 +58,41 @@ const ProductList = ({ products }) => {
           <SideBar />
         </div>
         <TextField
-          className="text-field"
           color="warning"
+          className="text-field"
           label="Search"
           variant="standard"
-          sx={{ margin: "2vw", width: "10vw" }}
+          sx={{ margin: "2vw", width: "10vw", bgcolor: "warning" }}
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        <Link to="/cart">
-          <Button sx={{ my: 2, color: "white" }}>
-            <Badge
-              badgeContent={cart?.products ? cart.products.length : 0}
-              color="secondary"
-            >
-              <ShoppingCartIcon />
-            </Badge>
-          </Button>
-        </Link>
+        {email == ADMIN ? null : (
+          <Link to="/cart">
+            <Button sx={{ my: 2, color: "white" }}>
+              <Badge badgeContent={cart?.products ? cart.products.length : 0}>
+                <ShoppingCartIcon sx={{ color: "#f0a500" }} />
+              </Badge>
+            </Button>
+          </Link>
+        )}
       </div>
-
-      <div style={{ display: "flex", backgroundColor: "" }}>
-        <div className="blog-left">
-          <Grid container spacing={6}>
-            {products ? (
-              products.map((item) => (
-                <Grid item>
-                  {/* <ProductCard item={item} key={item.id} /> */}
-                  <MediaCard item={item} key={item.id} />
-                </Grid>
-              ))
-            ) : (
-              <>
-                <h2>..Loading</h2>
-              </>
-            )}
-          </Grid>
+      <div style={{ display: "flex", backgroundColor: "#150050" }}>
+        <div style={{ display: "flex", backgroundColor: "" }}>
+          <div className="blog-left">
+            <Grid container spacing={6}>
+              {products ? (
+                products.map((item) => (
+                  <Grid item>
+                    <MediaCard item={item} key={item.id} />
+                  </Grid>
+                ))
+              ) : (
+                <>
+                  <h2>..Loading</h2>
+                </>
+              )}
+            </Grid>
+          </div>
         </div>
       </div>
     </>
